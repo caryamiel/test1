@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160205230755) do
+ActiveRecord::Schema.define(version: 20160205221430) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "user_id"
@@ -77,7 +77,6 @@ ActiveRecord::Schema.define(version: 20160205230755) do
     t.integer  "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "pmember_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -91,7 +90,6 @@ ActiveRecord::Schema.define(version: 20160205230755) do
     t.string   "project_confirm"
     t.string   "project_status"
     t.string   "project_color"
-    t.string   "admin"
   end
 
   create_table "projtalks", force: :cascade do |t|
@@ -132,6 +130,7 @@ ActiveRecord::Schema.define(version: 20160205230755) do
     t.text     "descriptions"
     t.date     "startDate"
     t.date     "dueDate"
+    t.string   "priority_number"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.integer  "project_id"
