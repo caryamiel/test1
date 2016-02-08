@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @jobpost.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @jobpost.user_id %>
+</p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @jobpost.topic %>
+</p>
+
+<%= link_to 'Edit', edit_jobpost_path(@jobpost) %> |
+<%= link_to 'Back', jobposts_path %>

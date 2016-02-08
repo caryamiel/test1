@@ -1,0 +1,2 @@
+module ProjtalksHelper
+end

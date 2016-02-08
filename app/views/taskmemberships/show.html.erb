@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @taskmembership.user_id %>
+</p>
+
+<p>
+  <strong>Taskmembership:</strong>
+  <%= @taskmembership.taskmembership_id %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @taskmembership.task_id %>
+</p>
+
+<%= link_to 'Edit', edit_taskmembership_path(@taskmembership) %> |
+<%= link_to 'Back', taskmemberships_path %>

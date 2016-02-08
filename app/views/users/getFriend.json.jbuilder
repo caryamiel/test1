@@ -1,0 +1,1 @@
+getFriend.json.jbuilder

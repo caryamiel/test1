@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @talkresp.user_id %>
+</p>
+
+<p>
+  <strong>Projtalk:</strong>
+  <%= @talkresp.projtalk_id %>
+</p>
+
+<p>
+  <strong>Talkcontent:</strong>
+  <%= @talkresp.talkcontent %>
+</p>
+
+<%= link_to 'Edit', edit_talkresp_path(@talkresp) %> |
+<%= link_to 'Back', talkresps_path %>

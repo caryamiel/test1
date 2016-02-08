@@ -1,0 +1,29 @@
+<%= form_for(@talkresp) do |f| %>
+  <% if @talkresp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@talkresp.errors.count, "error") %> prohibited this talkresp from being saved:</h2>
+
+      <ul>
+      <% @talkresp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :projtalk_id %><br>
+    <%= f.text_field :projtalk_id %>
+  </div>
+  <div class="field">
+    <%= f.label :talkcontent %><br>
+    <%= f.text_field :talkcontent %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
